@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  tomcat.uri-encoding: UTF-8
+spring:
+  application:
+    name: udesk_bi
+  datasource:
+    name: udesk_proj_staging
+    url: jdbc:mysql://123.59.53.142:3306/udesk_proj_staging?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: udesk
+    password: password
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    initialSize: 1
+    minIdle: 1
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  aop:
+    auto: true
+logging:
+  level:
+    org.springframework.web.client: INFO
