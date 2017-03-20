@@ -20,3 +20,4 @@ public class MybatisDemoApplication {
 		SpringApplication.run(MybatisDemoApplication.class, args);
 	}
 }
+master
