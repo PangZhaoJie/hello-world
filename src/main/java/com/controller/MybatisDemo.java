@@ -1,4 +1,6 @@
-package com.controller;1master
+package com.controller;
+
+import org.springframework.web.bind.annotation.RestController;
 
 import com.Mapper.QueryMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +23,4 @@ public class MybatisDemo {
     }
 
 }
-test2
+

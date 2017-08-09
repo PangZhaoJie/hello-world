@@ -1,14 +1,14 @@
 server:
-  port: 8080
+  port: 8085
   tomcat.uri-encoding: UTF-8
 spring:
   application:
     name: udesk_bi
   datasource:
     name: udesk_proj_staging
-    url: jdbc:mysql://123.59.53.142:3306/udesk_proj_staging?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: udesk
-    password: password
+    url: jdbc:mysql://127.0.0.1:3306/local?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: dog
+    password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     initialSize: 1
